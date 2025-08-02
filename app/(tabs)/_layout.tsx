@@ -1,43 +1,57 @@
+import AntDesign from '@expo/vector-icons/AntDesign';
 import { Tabs } from 'expo-router';
 import React from 'react';
-import { Platform } from 'react-native';
-
-import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
-import TabBarBackground from '@/components/ui/TabBarBackground';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
 
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-        tabBarButton: HapticTab,
-        tabBarBackground: TabBarBackground,
-        tabBarStyle: Platform.select({
-          ios: {
-            // Use a transparent background on iOS to show the blur effect
-            position: 'absolute',
-          },
-          default: {},
-        }),
-      }}>
+        headerTitleAlign: 'center',
+        headerStyle: {
+          backgroundColor: 'transparent',
+          elevation: 0,
+          shadowOpacity: 0,
+        },
+        headerTitleStyle: {
+          color: '#687076'
+        },
+        tabBarActiveTintColor: 'rgb(28, 174, 204)',
+        tabBarStyle: {
+          backgroundColor: '#f2f4f7',
+          height: 60,             
+          paddingTop: 10,         
+          paddingBottom: 10,      
+        },
+      }}
+    >
       <Tabs.Screen
-        name="index"
+        name="perguntas"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: 'Página inicial',
+          headerShown: true,
+          tabBarShowLabel: false,
+          tabBarIcon: ({ color }) => <AntDesign size={25} name="home" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="registros"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Registros',
+          headerShown: true,
+          tabBarShowLabel: false,
+          tabBarIcon: ({ color }) => <AntDesign name="database" size={25} color={color} 
+          />,
+        }}
+      />
+      <Tabs.Screen
+        name="lixeira"
+        options={{
+          title: 'Lixeira',
+          headerShown: true,
+          tabBarShowLabel: false,
+          tabBarIcon: ({ color }) => <AntDesign name="delete" size={25} color={color} 
+          />,
         }}
       />
     </Tabs>
