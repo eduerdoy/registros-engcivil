@@ -23,11 +23,13 @@ Gerencia os registros movidos:
 
 As perguntas são específicas para o curso de engenharia civil e só podem ser modificadas alterando o código fonte.
 
-<img width="289" height="600" alt="image" src="https://github.com/user-attachments/assets/509f4966-d4a8-4bcf-a1b7-e583c7901767" />
+![Sem título]()
 
-<img width="290" height="594" alt="image" src="https://github.com/user-attachments/assets/911d543a-251b-4ec4-a8ae-6f842351ef27" />
 
-<img width="293" height="605" alt="image" src="https://github.com/user-attachments/assets/ce343572-b716-4dde-b84b-23a4e9136333" />
+<img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/c1626f7e-b3e3-4a06-bfc1-cfb3900ddbe0" />
 
+<img width="300" height="400" alt="image" src=https://github.com/user-attachments/assets/afb2ade0-956f-45a9-9b06-cbce2e3cbb63 />
+
+<img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/dea59824-e41f-4894-9b3a-7fb9057f44ef" />
 
 
