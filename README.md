@@ -19,56 +19,7 @@ Gerencia os registros movidos:
 - Restaurar registros
 - Apagar definitivamente
 
-## Como configurar o projeto
-
-1. Clone o repositório
-```bash
-git clone https://github.com/eduerdoy/registros-engcivil.git
-cd pesquisa-campo
-```
-
-2. Instale as dependências
-```bash
-npm install
-```
-
-3. Para desenvolvimento
-```bash
-npx expo start
-```
-- Instale o Expo Go no seu celular
-- Escaneie o QR Code que aparece no terminal
-
-4. Para gerar o APK (Opcional)
-```bash
-# Instale o EAS CLI globalmente
-npm install -g eas-cli
-
-# Faça login no Expo
-eas login
-
-# Gere o APK
-eas build -p android --profile preview
-```
-
-## Arquivos necessários não versionados
-
-Para gerar o APK, você precisará dos seguintes arquivos (solicite ao mantenedor do projeto):
-- `my-upload-key.keystore` - Keystore para build Android
-
-## Estrutura do Projeto
-
-- `/app` - Código fonte da aplicação
-- `/assets` - Imagens e outros recursos
-- `/components` - Componentes React reutilizáveis
-- `/contexts` - Contextos do React
-- `/hooks` - Custom hooks
-- `/styles` - Estilos globais
-
 ## Observações
 
 As perguntas são específicas para o curso de engenharia civil e só podem ser modificadas alterando o código fonte.
 
-## Contato
-
-Para obter os arquivos necessários ou tirar dúvidas, entre em contato com o mantenedor do projeto.
