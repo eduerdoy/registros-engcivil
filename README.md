@@ -8,29 +8,26 @@ App desenvolvido sob demanda para alunos do curso de engenharia civil da UNIFAP,
 - Inicie um novo registro para salvar as informações de uma pesquisa de campo
 - Salve o registro clicando no botão ao finalizar
 
-![tab_perguntas](https://github.com/user-attachments/assets/99219984-1b8a-4aea-8727-b347d796392d)
-
-
 ### Tab "Registros"
 Cards das suas pesquisas salvas com as seguintes opções:
 - Ícone central: Ver e/ou editar as respostas
 - Ícone superior: Mover para a lixeira
 - Ícone inferior: Exportar o registro como PDF
 
-  ![tab_registros](https://github.com/user-attachments/assets/639fefab-e961-4aac-a2b1-b5cc3f553ade)
-
-
 ### Tab "Lixeira"
 Gerencia os registros movidos:
 - Restaurar registros
 - Apagar definitivamente
 
-  ![tab-lixeira](https://github.com/user-attachments/assets/dcd0c040-b5b9-4b7a-b136-71e44c60b5c2)
-
-
 ## Observações
 
 As perguntas são específicas para o curso de engenharia civil e só podem ser modificadas alterando o código fonte.
+
+<img width="289" height="600" alt="image" src="https://github.com/user-attachments/assets/509f4966-d4a8-4bcf-a1b7-e583c7901767" />
+
+<img width="290" height="594" alt="image" src="https://github.com/user-attachments/assets/911d543a-251b-4ec4-a8ae-6f842351ef27" />
+
+<img width="293" height="605" alt="image" src="https://github.com/user-attachments/assets/ce343572-b716-4dde-b84b-23a4e9136333" />
 
 
 
