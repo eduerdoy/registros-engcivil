@@ -1,50 +1,74 @@
-# Welcome to your Expo app 👋
+# App para registro de pesquisas de campo - UNIFAP
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+App desenvolvido sob demanda para alunos do curso de engenharia civil da UNIFAP, como um facilitador de registro de pesquisas de campo.
 
-## Get started
+## Funcionalidades
 
-1. Install dependencies
+### Tab "Perguntas"
+- Inicie um novo registro para salvar as informações de uma pesquisa de campo
+- Salve o registro clicando no botão ao finalizar
 
-   ```bash
-   npm install
-   ```
+### Tab "Registros"
+Cards das suas pesquisas salvas com as seguintes opções:
+- Ícone central: Ver e/ou editar as respostas
+- Ícone superior: Mover para a lixeira
+- Ícone inferior: Exportar o registro como PDF
 
-2. Start the app
+### Tab "Lixeira"
+Gerencia os registros movidos:
+- Restaurar registros
+- Apagar definitivamente
 
-   ```bash
-   npx expo start
-   ```
+## Como configurar o projeto
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+1. Clone o repositório
 ```bash
-npm run reset-project
+git clone https://github.com/eduerdoy/registros-engcivil.git
+cd pesquisa-campo
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Instale as dependências
+```bash
+npm install
+```
 
-## Learn more
+3. Para desenvolvimento
+```bash
+npx expo start
+```
+- Instale o Expo Go no seu celular
+- Escaneie o QR Code que aparece no terminal
 
-To learn more about developing your project with Expo, look at the following resources:
+4. Para gerar o APK (Opcional)
+```bash
+# Instale o EAS CLI globalmente
+npm install -g eas-cli
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# Faça login no Expo
+eas login
 
-## Join the community
+# Gere o APK
+eas build -p android --profile preview
+```
 
-Join our community of developers creating universal apps.
+## Arquivos necessários não versionados
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Para gerar o APK, você precisará dos seguintes arquivos (solicite ao mantenedor do projeto):
+- `my-upload-key.keystore` - Keystore para build Android
+
+## Estrutura do Projeto
+
+- `/app` - Código fonte da aplicação
+- `/assets` - Imagens e outros recursos
+- `/components` - Componentes React reutilizáveis
+- `/contexts` - Contextos do React
+- `/hooks` - Custom hooks
+- `/styles` - Estilos globais
+
+## Observações
+
+As perguntas são específicas para o curso de engenharia civil e só podem ser modificadas alterando o código fonte.
+
+## Contato
+
+Para obter os arquivos necessários ou tirar dúvidas, entre em contato com o mantenedor do projeto.

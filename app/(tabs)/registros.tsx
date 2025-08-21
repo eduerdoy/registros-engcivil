@@ -45,7 +45,7 @@ export default function Registros() {
 const salvarEdicao = async () => {
   try {
     const registrosAtuais = JSON.parse(await AsyncStorage.getItem('registros') || '[]');
-    const index = registrosAtuais.findIndex(r => r.id === registroEditando.id);
+    const index = registrosAtuais.findIndex((r: Registro) => r.id === registroEditando.id);
     
     if (index !== -1) {
       registrosAtuais[index] = { ...registroEditando, ...respostasEdicao };

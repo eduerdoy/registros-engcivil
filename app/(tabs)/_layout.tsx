@@ -24,6 +24,7 @@ export default function TabLayout() {
           paddingBottom: 10,      
         },
       }}
+      initialRouteName="perguntas"
     >
       <Tabs.Screen
         name="perguntas"
